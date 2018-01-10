@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="cc.staralloff.bxcxjc:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/cc_staralloff_bxcxjc_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="bxcxjc/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="bxcxjc" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
