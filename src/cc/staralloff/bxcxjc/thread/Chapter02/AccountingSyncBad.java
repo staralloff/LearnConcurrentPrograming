@@ -1,24 +1,23 @@
 package cc.staralloff.bxcxjc.thread.Chapter02;
 
 /**
- * 同步方法
+ * 错误的同步方式
  */
-public class AccountingSync2 implements Runnable {
-    static AccountingSync2 instance = new AccountingSync2();
+public class AccountingSyncBad implements Runnable {
     static int i=0;
     public synchronized void increase() {
         i++;
     }
     @Override
     public void run() {
-        for(int j=0;j<10000000;j++) {
+        for(int j=0;j<10000000;j++){
             increase();
         }
     }
 
     public static void main(String[] args) throws InterruptedException {
-        Thread t1 = new Thread(instance);
-        Thread t2 = new Thread(instance);
+        Thread t1=new Thread(new AccountingSyncBad());
+        Thread t2=new Thread(new AccountingSyncBad());
         t1.start();t2.start();
         t1.join();t2.join();
         System.out.println(i);
