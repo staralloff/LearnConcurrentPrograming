@@ -35,9 +35,9 @@ public class StopThreadUnsafe {
     public static class ChangeObjectThread extends Thread{
         volatile boolean stopme = false;
 
-        public void stopMe(){
-            stopme = true;
-        }
+//        public void stopMe(){
+//            stopme = true;
+//        }
         @Override
         public void run(){
             while(true){
