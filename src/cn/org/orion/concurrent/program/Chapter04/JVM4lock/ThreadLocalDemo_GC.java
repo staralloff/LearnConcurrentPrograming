@@ -7,6 +7,7 @@ import java.util.concurrent.Executors;
 
 import com.sun.org.apache.xerces.internal.impl.xpath.regex.ParseException;
 
+@SuppressWarnings("restriction")
 public class ThreadLocalDemo_GC {
 	static volatile ThreadLocal<SimpleDateFormat> t1 = new ThreadLocal<SimpleDateFormat>() {
 		@Override
@@ -21,7 +22,7 @@ public class ThreadLocalDemo_GC {
 			this.i = i;
 		}
 
-		@SuppressWarnings("serial")
+		@SuppressWarnings({ "serial" })
 		public void run() {
 			try {
 				if(t1.get() == null) {
