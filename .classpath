@@ -16,6 +16,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="D:/jar/jmatrices_all_0_6/jmatrices0.6.jar"/>
+	<classpathentry kind="lib" path="/Users/shixin/Downloads/jmatrices0.6.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

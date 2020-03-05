@@ -54,6 +54,7 @@ public class ParallelSort {
 		}
 	}
 	
+	@SuppressWarnings("static-access")
 	public static void main(String[] args) throws InterruptedException {
 		ParallelSort ps = new ParallelSort();
 		ps.pOddEvenSort(ps.arr);

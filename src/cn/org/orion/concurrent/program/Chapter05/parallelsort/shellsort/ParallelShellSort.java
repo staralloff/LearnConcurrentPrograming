@@ -70,6 +70,7 @@ public class ParallelShellSort {
 		}
 	}
 	
+	@SuppressWarnings("static-access")
 	public static void main(String[] args) throws InterruptedException {
 		ParallelShellSort pss = new ParallelShellSort();
 		pss.pShellSort(pss.arr);

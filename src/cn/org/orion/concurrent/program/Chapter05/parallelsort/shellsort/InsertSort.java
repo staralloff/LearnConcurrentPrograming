@@ -18,6 +18,7 @@ public class InsertSort {
 		}
 	}
 	
+	@SuppressWarnings("static-access")
 	public static void main(String[] args) {
 		int[] arr = {7,9,10,6,8,3,4,5,1,2};
 		InsertSort is = new InsertSort();

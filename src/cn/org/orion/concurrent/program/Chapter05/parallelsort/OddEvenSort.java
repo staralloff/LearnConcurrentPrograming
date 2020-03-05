@@ -20,6 +20,7 @@ public class OddEvenSort {
 		}
 	}
 	
+	@SuppressWarnings("static-access")
 	public static void main(String[] args) {
 		OddEvenSort oes = new OddEvenSort();
 		int[] arr = {10,9,8,7,6,5,4,3,2,1};

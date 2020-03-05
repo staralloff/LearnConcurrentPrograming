@@ -8,6 +8,7 @@ import java.util.concurrent.RecursiveTask;
 import org.jmatrices.dbl.Matrix;
 import org.jmatrices.dbl.operator.MatrixOperator;
 
+@SuppressWarnings("serial")
 public class MatrixMulTask extends RecursiveTask<Matrix> {
 	Matrix m1;
 	Matrix m2;
