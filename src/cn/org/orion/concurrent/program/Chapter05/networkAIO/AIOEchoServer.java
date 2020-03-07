@@ -13,7 +13,6 @@ import java.util.concurrent.TimeoutException;
 
 public class AIOEchoServer {
 	public final static int PORT = 8000;
-	@SuppressWarnings("unused")
 	private AsynchronousServerSocketChannel server;
 	public AIOEchoServer() throws IOException {
 		server = AsynchronousServerSocketChannel.open().bind(new InetSocketAddress(PORT));
@@ -64,7 +63,6 @@ public class AIOEchoServer {
 
 			@Override
 			public void failed(Throwable exc, Object attachment) {
-				// TODO Auto-generated method stub
 				System.out.println("failed: " + exc);
 			}
 			
