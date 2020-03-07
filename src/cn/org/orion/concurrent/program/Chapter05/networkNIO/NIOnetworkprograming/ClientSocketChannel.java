@@ -15,6 +15,7 @@ public class ClientSocketChannel {
 		startChannelConnection();
 	}
 
+	@SuppressWarnings("unused")
 	private static void startChannelConnection() {
 		try {
 			//create a selector
@@ -49,6 +50,7 @@ public class ClientSocketChannel {
 							//at this send msg to server.
 							channel.write(ByteBuffer.wrap(new String("向服务端发送了一条信息").getBytes()));
 							new Thread(new Runnable() {
+								@SuppressWarnings("resource")
 								@Override
 								public void run() {
 									while(true) {
@@ -72,6 +74,7 @@ public class ClientSocketChannel {
 								//if allocate value is smaller,as to not codemiss can cached all byte first
 								//then use String constructor to encode UTF-8 once.
 								//but this have more cached operation.
+								//unused
 								List<Byte> bytearr = new ArrayList<Byte>();
 								StringBuffer buffer = new StringBuffer();
 								while(true) {

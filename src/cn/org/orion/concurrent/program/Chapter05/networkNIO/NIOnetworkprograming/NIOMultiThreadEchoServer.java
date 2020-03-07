@@ -22,6 +22,7 @@ public class NIOMultiThreadEchoServer {
 	private ExecutorService tp = Executors.newCachedThreadPool();
 	
 	public static Map<Socket,Long> time_stat = new HashMap<Socket,Long>(10240);
+	@SuppressWarnings({ "unused", "rawtypes" })
 	private void startServer() throws Exception {
 		selector = SelectorProvider.provider().openSelector();
 		ServerSocketChannel ssc = ServerSocketChannel.open();
@@ -31,6 +32,7 @@ public class NIOMultiThreadEchoServer {
 		InetSocketAddress isa = new InetSocketAddress(7788);
 		ssc.socket().bind(isa);
 		
+		//unused
 		SelectionKey acceptKey = ssc.register(selector, SelectionKey.OP_ACCEPT);
 		
 		for(;;) {

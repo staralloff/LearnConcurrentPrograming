@@ -18,6 +18,7 @@ public class MyMultiThreadNIOEchoServer {
 	private ExecutorService tp = Executors.newCachedThreadPool();
 	
 	//public static Map<Socket,Long> time_stat=new HashMap<Socket,Long>(10240);
+	@SuppressWarnings("rawtypes")
 	private void startServer() throws Exception {
 		// open a selector.
 		selector = Selector.open();
@@ -130,6 +131,7 @@ public class MyMultiThreadNIOEchoServer {
 			clientKey.interestOps(SelectionKey.OP_WRITE);
 			selector.wakeup();// notify  wakeup selector() method.
 			tp.execute(new Runnable() {
+				@SuppressWarnings("resource")
 				@Override
 				public void run() {
 					while(true) {
