@@ -1,4 +1,4 @@
-package cn.org.orion.concurrent.program.Chapter06.basic.reference;
+package cn.org.orion.concurrent.program.Chapter06.basic.Reference;
 
 import java.util.ArrayList;
 import java.util.List;

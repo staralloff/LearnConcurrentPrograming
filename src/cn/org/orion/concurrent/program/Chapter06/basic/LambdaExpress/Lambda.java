@@ -1,4 +1,4 @@
-package cn.org.orion.concurrent.program.Chapter06.basic.lambdaexpress;
+package cn.org.orion.concurrent.program.Chapter06.basic.LambdaExpress;
 
 import java.util.Arrays;
 import java.util.List;
