@@ -1,6 +1,6 @@
 # Function as first
 ***
-## If you use JQuery,You would use next code usually
+## If you use JQuery,You would use following code usually
 ```
 $("button").click(function() {
  $("li").each(function() {
